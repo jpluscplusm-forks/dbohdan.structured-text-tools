@@ -691,15 +691,18 @@ Description = "Query and transform data with jq. Based on gojq."
 # Templating for structured text
 
 [CUE]
-url = "https://github.com/cuelang/cue"
-tags = ["template"]
+Platform = "Free/Net/OpenBSD, Linux, macOS, Windows"
+License = "Apache-2.0"
+url = "https://cuelang.org"
+descr = "A data constraint, validation, templating, and transformation language that provides a CLI tool and a Go API. Can read and write [multiple formats](https://cuelang.org/docs/integration/)"
+tags = ["template", "json", "yaml", "toml", "xml", "multiformat"]
 
 [CUE.props]
-"Output format" = "JSON"
+"Output format" = "JSON, YAML, TOML, plain text, Go, CUE"
 Turing-complete = "No"
 Syntax = "Extended JSON"
-"I/O" = "?"
-Description = "A constraint language for JSON configuration data. Can generate and validates JSON."
+"I/O" = "By default, CUE evaluations are hermetically sealed for safety and consistency. Can be run in \"command\" mode which permits arbitrary commands and I/O."
+Description = "A data constraint, validation, templating, and transformation language that provides a CLI tool and a Go API. Can read and write [multiple formats](https://cuelang.org/docs/integration/)"
 
 [Dhall]
 url = "https://dhall-lang.org/"
